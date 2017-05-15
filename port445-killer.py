@@ -28,7 +28,7 @@ def findPID(port = 445) :
 def closePort() :
 	for pid in pids :
 		try :
-		     y = os.system("taskkill /F /PID 388")
+		     y = os.system("taskkill /F /PID {}".format(pid))
 		    print("done")
 		    input()
 		except Exception as e :
